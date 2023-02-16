@@ -1,0 +1,12 @@
+<form [formGroup]="heroForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Id</mat-label>
+    <input matInput formControlName="id">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+
+  <app-super-power-list [superPowers]="superPowers"></app-super-power-list>
+</form>
